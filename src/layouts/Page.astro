@@ -1,0 +1,31 @@
+---
+// https://fontsource.org
+import '@fontsource-variable/inter';
+import "/src/styles/preflight.css";
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+		<link rel="preconnect" href="https://p.typekit.net" crossorigin>
+		<link rel="preload" href="https://p.typekit.net" crossorigin>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style lang="scss">
+	@import "/src/styles/global";
+</style>

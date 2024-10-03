@@ -1,0 +1,100 @@
+// Spacing Variables
+// These variables define various spacing values used throughout the project.
+// Adjust these values to maintain consistent spacing.
+$space-1: 10px;
+$space-2: 20px;
+$space-3: 40px;
+$space-4: 60px;
+$space-5: 80px;
+$space-6: 90px;
+$space-7: 160px;
+
+// Section Padding Variables
+// Define the padding for sections to ensure proper spacing on different devices.
+$section-outer-padding-left: var(--section-outer-padding-left);
+$section-outer-padding-right: var(--section-outer-padding-right);
+
+$laptop-section-outer-padding-left: calc(17.6271vw - 133.8303px);
+$laptop-section-outer-padding-right: calc(17.6271vw - 133.8303px);
+
+$mobile-section-outer-padding-left: 1rem;
+$mobile-section-outer-padding-right: 1rem;
+
+// Navbar Height
+// Define the height of the navbar using one of the spacing variables.
+$navbar-height: $space-4;
+
+// Mixin: Section Layout
+// This mixin applies padding to sections, adjusting for different device sizes.
+@mixin section-outer-layout {
+  padding-left: $section-outer-padding-left;
+  padding-right: $section-outer-padding-right;
+  padding-top: var(--section-outer-padding-top);
+  padding-bottom: var(--section-outer-padding-bottom);
+
+  margin-left: var(--section-outer-margin-left);
+  margin-right: var(--section-outer-margin-right);
+  margin-top: var(--section-outer-margin-top);
+  margin-bottom: var(--section-outer-margin-bottom);
+
+  background-color: var(--section-outer-background-color);
+
+  border:var(--section-outer-border);
+  border-radius:var(--section-outer-border-radius);
+
+  @include media('>mobile', '<laptop') {
+    padding-left: $laptop-section-outer-padding-left;
+    padding-right: $laptop-section-outer-padding-right;
+  }
+
+  @include media('<=mobile') {
+    padding-left: $mobile-section-outer-padding-left;
+    padding-right: $mobile-section-outer-padding-right;
+  }
+}
+
+
+$section-inner-padding-left: var(--section-inner-padding-left);
+$section-inner-padding-right: var(--section-inner-padding-right);
+
+$laptop-section-inner-padding-left: calc(17.6271vw - 133.8303px);
+$laptop-section-inner-padding-right: calc(17.6271vw - 133.8303px);
+
+$mobile-section-inner-padding-left: 1rem;
+$mobile-section-inner-padding-right: 1rem;
+
+@mixin section-inner-layout {
+  padding-left: $section-inner-padding-left;
+  padding-right: $section-inner-padding-right;
+  padding-top: var(--section-inner-padding-top);
+  padding-bottom: var(--section-inner-padding-bottom);
+
+  margin-left: var(--section-inner-margin-left);
+  margin-right: var(--section-inner-margin-right);
+  margin-top: var(--section-inner-margin-top);
+  margin-bottom: var(--section-inner-margin-bottom);
+
+  background-color: var(--section-inner-background-color);
+
+  border:var(--section-inner-border);
+  border-radius:var(--section-inner-border-radius);
+
+  @include media('>mobile', '<laptop') {
+    padding-left: $laptop-section-inner-padding-left;
+    padding-right: $laptop-section-inner-padding-right;
+  }
+
+  @include media('<=mobile') {
+    padding-left: $mobile-section-inner-padding-left;
+    padding-right: $mobile-section-inner-padding-right;
+  }
+}
+
+// Mixin: Grid
+// This mixin sets up a CSS Grid layout with a configurable number of columns.
+@mixin grid($columns: 12) {
+  display: grid;
+  grid-template-columns: repeat($columns, minmax(0px, 1fr));
+  grid-auto-flow: row;
+  gap: 1rem;
+}

@@ -1,0 +1,49 @@
+// Global Styles for HTML
+html {
+  -webkit-font-smoothing: antialiased; // Smoothing for better font rendering on WebKit browsers
+  -moz-osx-font-smoothing: grayscale; // Smoothing for better font rendering on macOS
+  overflow-y: initial; // Initial value for vertical overflow
+  background: $color-background; // Set the background color
+}
+
+// Global Styles for Body
+body {
+  @include media('<=mobile') {
+    padding: 0 env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); // Padding for safe area insets on mobile
+  }
+  background-color: $color-background-iphone; // Background color specific to iPhone
+  overflow-x: hidden; // Prevent horizontal overflow
+}
+
+// Shared Styles for HTML and Body
+html,
+body {
+  @include font-style-4; // Apply font style 4
+  color: $color-primary; // Set primary color
+  font-family: $font-primary; // Set primary font family
+  padding: 0; // Remove default padding
+  margin: 0; // Remove default margin
+}
+
+// Heading Styles
+// Ensure all heading elements use the primary font family
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+label {
+  cursor: inherit;
+}
+// Footer Styles
+footer {
+  overflow-x: hidden; // Prevent horizontal overflow in footer
+}
+
+[v-cloak] {
+  opacity: 0.1;
+}

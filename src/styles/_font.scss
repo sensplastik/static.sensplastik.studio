@@ -1,0 +1,235 @@
+// Font Weight Variables
+// Define the font weights used throughout the project.
+$font-weight-regular: var(--font-weight-regular);
+$font-weight-medium: var(--font-weight-medium);
+
+// Font sizes
+$font-size-1: var(--font-style-1-font-size); // 8px
+$font-size-2: var(--font-style-2-font-size); // 12px
+$font-size-3: var(--font-style-3-font-size); // 14px
+$font-size-4: var(--font-style-4-font-size); // 16px
+$font-size-5: var(--font-style-5-font-size); // 26px
+$font-size-6: var(--font-style-6-font-size); // 32px
+$font-size-7: var(--font-style-7-font-size); // 36px
+$font-size-8: var(--font-style-8-font-size); // 44px
+$font-size-9: var(--font-style-9-font-size); // 50px
+$font-size-10: var(--font-style-10-font-size); // 58px
+$font-size-11: var(--font-style-11-font-size); // 74px 
+$font-size-12: var(--font-style-12-font-size); // 85px 
+
+// Mobile font-sizes
+$mobile-font-size-1: var(--mobile-font-style-1-font-size); // 10px
+$mobile-font-size-2: var(--mobile-font-style-2-font-size); // 12px
+$mobile-font-size-3: var(--mobile-font-style-3-font-size); // 14px
+$mobile-font-size-4: var(--mobile-font-style-4-font-size); // 16px
+$mobile-font-size-5: var(--mobile-font-style-5-font-size); // 24px
+$mobile-font-size-6: var(--mobile-font-style-6-font-size); // 30px
+$mobile-font-size-7: var(--mobile-font-style-7-font-size); // 32px
+$mobile-font-size-8: var(--mobile-font-style-8-font-size); // 42px
+$mobile-font-size-9: var(--mobile-font-style-9-font-size); // 46px
+$mobile-font-size-10: var(--mobile-font-style-10-font-size); // 52px
+$mobile-font-size-11: var(--mobile-font-style-11-font-size); // 42px
+$mobile-font-size-12: var(--mobile-font-style-12-font-size); // 50px
+
+// Letter spacing
+$letter-spacing-1: var(--font-style-1-letter-spacing); // -0.025em
+$letter-spacing-2: var(--font-style-2-letter-spacing); // -0.021em
+$letter-spacing-3: var(--font-style-3-letter-spacing); // -0.031em
+$letter-spacing-4: var(--font-style-4-letter-spacing); // -0.03em
+$letter-spacing-5: var(--font-style-5-letter-spacing); // -0.038em
+$letter-spacing-6: var(--font-style-6-letter-spacing); // -0.040em
+$letter-spacing-7: var(--font-style-7-letter-spacing); // -0.043em
+$letter-spacing-8: var(--font-style-8-letter-spacing); // -0.044em
+$letter-spacing-9: var(--font-style-9-letter-spacing); // -0.045em
+$letter-spacing-10: var(--font-style-10-letter-spacing); // -0.05em
+$letter-spacing-11: var(--font-style-11-letter-spacing); // -0.048em
+$letter-spacing-12: var(--font-style-12-letter-spacing); // -0.049em
+
+// Mobile letter spacing
+$mobile-letter-spacing-1: var(--mobile-font-style-1-letter-spacing); // -0.025em
+$mobile-letter-spacing-2: var(--mobile-font-style-2-letter-spacing); // -0.027em
+$mobile-letter-spacing-3: var(--mobile-font-style-3-letter-spacing); // -0.028em
+$mobile-letter-spacing-4: var(--mobile-font-style-4-letter-spacing); // -0.03em
+$mobile-letter-spacing-5: var(--mobile-font-style-5-letter-spacing); // -0.034em
+$mobile-letter-spacing-6: var(--mobile-font-style-6-letter-spacing); // -0.040em
+$mobile-letter-spacing-7: var(--mobile-font-style-7-letter-spacing); // -0.041em
+$mobile-letter-spacing-8: var(--mobile-font-style-8-letter-spacing); // -0.042em
+$mobile-letter-spacing-9: var(--mobile-font-style-9-letter-spacing); // -0.047em
+$mobile-letter-spacing-10: var(--mobile-font-style-10-letter-spacing); // -0.05em
+$mobile-letter-spacing-11: var(--mobile-font-style-11-letter-spacing); // -0.048em
+$mobile-letter-spacing-12: var(--mobile-font-style-12-letter-spacing); // -0.048em
+
+// Line height
+$line-height-1: var(--font-style-1-line-height); // 125%
+$line-height-2: var(--font-style-2-line-height); // 110%
+$line-height-3: var(--font-style-3-line-height); // 114%
+$line-height-4: var(--font-style-4-line-height); // 108%
+$line-height-5: var(--font-style-5-line-height); // 100%
+$line-height-6: var(--font-style-6-line-height); // 100%
+$line-height-7: var(--font-style-7-line-height); // 100%
+$line-height-8: var(--font-style-8-line-height); // 100%
+$line-height-9: var(--font-style-9-line-height); // 100%
+$line-height-10: var(--font-style-10-line-height); // 100%
+$line-height-11: var(--font-style-11-line-height); // 100%
+$line-height-12: var(--font-style-12-line-height); // 100%
+
+// Mobile line height
+$mobile-line-height-1: var(--mobile-font-style-1-line-height); // 118%
+$mobile-line-height-2: var(--mobile-font-style-2-line-height); // 110%
+$mobile-line-height-3: var(--mobile-font-style-3-line-height); // 110%
+$mobile-line-height-4: var(--mobile-font-style-4-line-height); // 109%
+$mobile-line-height-5: var(--mobile-font-style-5-line-height); // 104%
+$mobile-line-height-6: var(--mobile-font-style-6-line-height); // 100%
+$mobile-line-height-7: var(--mobile-font-style-7-line-height); // 100%
+$mobile-line-height-8: var(--mobile-font-style-8-line-height); // 100%
+$mobile-line-height-9: var(--mobile-font-style-9-line-height); // 100%
+$mobile-line-height-10: var(--mobile-font-style-10-line-height); // 100%
+$mobile-line-height-11: var(--mobile-font-style-11-line-height); // 100%
+$mobile-line-height-12: var(--mobile-font-style-12-line-height); // 100%
+
+// Font Style Mixins
+// These mixins define font styles including size, letter-spacing, and line-height,
+// with media queries to adjust styles for mobile devices.
+@mixin font-style-1 {
+  font-size: $font-size-1;
+  letter-spacing: $letter-spacing-1;
+  line-height: $line-height-1;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-1;
+    letter-spacing: $mobile-letter-spacing-1;
+    line-height: $mobile-line-height-1;
+  }
+}
+
+@mixin font-style-2 {
+  font-size: $font-size-2;
+  letter-spacing: $letter-spacing-2;
+  line-height: $line-height-2;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-2;
+    letter-spacing: $mobile-letter-spacing-2;
+    line-height: $mobile-line-height-2;
+  }
+}
+
+@mixin font-style-3 {
+  font-size: $font-size-3;
+  letter-spacing: $letter-spacing-3;
+  line-height: $line-height-3;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-3;
+    letter-spacing: $mobile-letter-spacing-3;
+    line-height: $mobile-line-height-3;
+  }
+}
+
+@mixin font-style-4 {
+  font-size: $font-size-4;
+  letter-spacing: $letter-spacing-4;
+  line-height: $line-height-4;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-4;
+    letter-spacing: $mobile-letter-spacing-4;
+    line-height: $mobile-line-height-4;
+  }
+}
+
+@mixin font-style-5 {
+  font-size: $font-size-5;
+  letter-spacing: $letter-spacing-5;
+  line-height: $line-height-5;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-5;
+    letter-spacing: $mobile-letter-spacing-5;
+    line-height: $mobile-line-height-5;
+  }
+}
+
+@mixin font-style-6 {
+  font-size: $font-size-6;
+  letter-spacing: $letter-spacing-6;
+  line-height: $line-height-6;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-6;
+    letter-spacing: $mobile-letter-spacing-6;
+    line-height: $mobile-line-height-6;
+  }
+}
+
+@mixin font-style-7 {
+  font-size: $font-size-7;
+  letter-spacing: $letter-spacing-7;
+  line-height: $line-height-7;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-7;
+    letter-spacing: $mobile-letter-spacing-7;
+    line-height: $mobile-line-height-7;
+  }
+}
+
+@mixin font-style-8 {
+  font-size: $font-size-8;
+  letter-spacing: $letter-spacing-8;
+  line-height: $line-height-8;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-8;
+    letter-spacing: $mobile-letter-spacing-8;
+    line-height: $mobile-line-height-8;
+  }
+}
+
+@mixin font-style-9 {
+  font-size: $font-size-9;
+  letter-spacing: $letter-spacing-9;
+  line-height: $line-height-9;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-9;
+    letter-spacing: $mobile-letter-spacing-9;
+    line-height: $mobile-line-height-9;
+  }
+}
+
+@mixin font-style-10 {
+  font-size: $font-size-10;
+  letter-spacing: $letter-spacing-10;
+  line-height: $line-height-10;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-10;
+    letter-spacing: $mobile-letter-spacing-10;
+    line-height: $mobile-line-height-10;
+  }
+}
+
+@mixin font-style-11 {
+  font-size: $font-size-11;
+  letter-spacing: $letter-spacing-11;
+  line-height: $line-height-11;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-11;
+    letter-spacing: $mobile-letter-spacing-11;
+    line-height: $mobile-line-height-11;
+  }
+}
+
+@mixin font-style-12 {
+  font-size: $font-size-12;
+  letter-spacing: $letter-spacing-12;
+  line-height: $line-height-12;
+
+  @include media('<mobile') {
+    font-size: $mobile-font-size-12;
+    letter-spacing: $mobile-letter-spacing-12;
+    line-height: $mobile-line-height-12;
+  }
+}

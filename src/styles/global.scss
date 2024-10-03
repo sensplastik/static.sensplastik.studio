@@ -1,0 +1,217 @@
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+    src: url('https://use.typekit.net/af/579a71/00000000000000007735bb24/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3') format('woff2'), url('https://use.typekit.net/af/579a71/00000000000000007735bb24/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3') format('woff'), url('https://use.typekit.net/af/579a71/00000000000000007735bb24/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3') format('opentype');
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url('https://use.typekit.net/af/d7f1e9/00000000000000007735bb2a/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3') format('woff2'), url('https://use.typekit.net/af/d7f1e9/00000000000000007735bb2a/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3') format('woff'), url('https://use.typekit.net/af/d7f1e9/00000000000000007735bb2a/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3') format('opentype');
+}
+
+:root {
+  --color-primary: #1f1e1c;
+  --color-secondary: #7c7c7a;
+  --color-third: #8e8d86;
+  --color-fourth: #5f5a5a;
+  --color-lines: #e3e1dd;
+  --color-punchy: #ebd248;
+  --color-background: #ffffff;
+  --color-background-iphone: #ffffff;
+  --color-white: #ffffff;
+  --color-black: #1f1e1c;
+  //
+  --color-background-menu: #e3e1dd;
+  --color-menu-link: #ffffff;
+  --color-menu-link-hover: #7c7c7a;
+  --color-menu-link-active: #ffffff;
+
+  // Font Weight
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  // Font Size
+  --font-style-1-font-size: calc(5.5593px + 0.1694vw); // 8px
+  --font-style-2-font-size: calc(9.5593px + 0.1694vw); // 12px
+  --font-style-3-font-size: calc(9.1186px + 0.3389vw); // 14px
+  --font-style-4-font-size: calc(6.2372px + 0.6779vw); // 16px
+  --font-style-5-font-size: calc(11.3559px + 1.0169vw); // 26px
+  --font-style-6-font-size: calc(12.4745px + 1.3559vw); // 32px
+  --font-style-7-font-size: calc(16.475px + 1.3559vw); // 36px
+  --font-style-8-font-size: calc(19.5932px + 1.16949vw); // 44px
+  --font-style-9-font-size: calc(15.8722px + 2.3754vw); // 50px
+  --font-style-10-font-size: calc(18.9491px + 2.7118vw); // 58px
+  --font-style-11-font-size: calc(34.9491px + 2.7118vw); // 74px
+  --font-style-12-font-size: calc(31.305px + 3.7288vw); // 85px*/
+
+  // Mobile font-sizes
+  --mobile-font-style-1-font-size: 10px;
+  --mobile-font-style-2-font-size: 12px;
+  --mobile-font-style-3-font-size: 14px;
+  --mobile-font-style-4-font-size: 16px;
+  --mobile-font-style-5-font-size: 24px;
+  --mobile-font-style-6-font-size: 30px;
+  --mobile-font-style-7-font-size: 32px;
+  --mobile-font-style-8-font-size: 42px;
+  --mobile-font-style-9-font-size: 46px;
+  --mobile-font-style-10-font-size: 42px;
+  --mobile-font-style-11-font-size: 50px;
+  --mobile-font-style-12-font-size: 52px;
+
+  // Letter spacing
+  --font-style-1-letter-spacing: -0.025em;
+  --font-style-2-letter-spacing: -0.021em;
+  --font-style-3-letter-spacing: -0.031em;
+  --font-style-4-letter-spacing: -0.03rem;
+  --font-style-5-letter-spacing: -0.038em;
+  --font-style-6-letter-spacing: -0.04em;
+  --font-style-7-letter-spacing: -0.043em;
+  --font-style-8-letter-spacing: -0.044em;
+  --font-style-9-letter-spacing: -0.045em;
+  --font-style-10-letter-spacing: -0.05em;
+  --font-style-11-letter-spacing: -0.048em;
+  --font-style-12-letter-spacing: -0.049em;
+
+  // Mobile letter spacing
+  --mobile-font-style-1-letter-spacing: -0.025em;
+  --mobile-font-style-2-letter-spacing: -0.027em;
+  --mobile-font-style-3-letter-spacing: -0.028em;
+  --mobile-font-style-4-letter-spacing: -0.03em;
+  --mobile-font-style-5-letter-spacing: -0.034em;
+  --mobile-font-style-6-letter-spacing: -0.04em;
+  --mobile-font-style-7-letter-spacing: -0.041em;
+  --mobile-font-style-8-letter-spacing: -0.042em;
+  --mobile-font-style-9-letter-spacing: -0.047em;
+  --mobile-font-style-10-letter-spacing: -0.05em;
+  --mobile-font-style-11-letter-spacing: -0.048em;
+  --mobile-font-style-12-letter-spacing: -0.048em;
+
+  // Line height
+  --font-style-1-line-height: 125%;
+  --font-style-2-line-height: 110%;
+  --font-style-3-line-height: 114%;
+  --font-style-4-line-height: 125%;
+  --font-style-5-line-height: 100%;
+  --font-style-6-line-height: 100%;
+  --font-style-7-line-height: 100%;
+  --font-style-8-line-height: 100%;
+  --font-style-9-line-height: 100%;
+  --font-style-10-line-height: 100%;
+  --font-style-11-line-height: 100%;
+  --font-style-12-line-height: 100%;
+
+  // Mobile line height
+  --mobile-font-style-1-line-height: 118%;
+  --mobile-font-style-2-line-height: 110%;
+  --mobile-font-style-3-line-height: 110%;
+  --mobile-font-style-4-line-height: 109%;
+  --mobile-font-style-5-line-height: 104%;
+  --mobile-font-style-6-line-height: 100%;
+  --mobile-font-style-7-line-height: 100%;
+  --mobile-font-style-8-line-height: 100%;
+  --mobile-font-style-9-line-height: 100%;
+  --mobile-font-style-10-line-height: 100%;
+  --mobile-font-style-11-line-height: 100%;
+  --mobile-font-style-12-line-height: 100%;
+
+  // Section Layout
+
+  // Outer paddings
+  --section-outer-padding-left: 1.62rem;
+  --section-outer-padding-right: 1.62rem;
+  --section-outer-padding-top: unset;
+  --section-outer-padding-bottom: unset;
+
+  --laptop-section-outer-padding-left: 1.62rem;
+  --laptop-section-outer-padding-right: 1.62rem;
+  --laptop-section-outer-padding-top: unset;
+  --laptop-section-outer-padding-bottom: unset;
+
+  --mobile-section-outer-padding-left: 1rem;
+  --mobile-section-outer-padding-right: 1rem;
+  --mobile-section-outer-padding-top: unset;
+  --mobile-section-outer-padding-bottom: unset;
+
+  // Outer margins
+  --section-outer-margin-left: unset;
+  --section-outer-margin-right: unset;
+  --section-outer-margin-top: unset;
+  --section-outer-margin-bottom: unset;
+
+  --laptop-section-outer-margin-left: unset;
+  --laptop-section-outer-margin-right: unset;
+  --laptop-section-outer-margin-top: unset;
+  --laptop-section-outer-margin-bottom: unset;
+
+  --mobile-section-outer-margin-left: unset;
+  --mobile-section-outer-margin-right: unset;
+  --mobile-section-outer-margin-top: unset;
+  --mobile-section-outer-margin-bottom: unset;
+
+  // Inner paddings
+  --section-inner-padding-left: 1.5rem;
+  --section-inner-padding-right: 1.5rem;
+  --section-inner-padding-top: unset;
+  --section-inner-padding-bottom: unset;
+
+  --laptop-section-inner-padding-left: 1.5rem;
+  --laptop-section-inner-padding-right: 1.5rem;
+  --laptop-section-inner-padding-top: unset;
+  --laptop-section-inner-padding-bottom: unset;
+
+  --mobile-section-inner-padding-left: 1rem;
+  --mobile-section-inner-padding-right: 1rem;
+  --mobile-section-inner-padding-top: unset;
+  --mobile-section-inner-padding-bottom: unset;
+
+  // Outer margins
+  --section-inner-margin-left: unset;
+  --section-inner-margin-right: unset;
+  --section-inner-margin-top: unset;
+  --section-inner-margin-bottom: unset;
+
+  --laptop-section-inner-margin-left: unset;
+  --laptop-section-inner-margin-right: unset;
+  --laptop-section-inner-margin-top: unset;
+  --laptop-section-inner-margin-bottom: unset;
+
+  --mobile-section-inner-margin-left: unset;
+  --mobile-section-inner-margin-right: unset;
+  --mobile-section-inner-margin-top: unset;
+  --mobile-section-inner-margin-bottom: unset;
+
+  // Navbar Height
+  --navbar-height: 60px;  
+
+  --font-primary:'Inter Variable', sans-serif;
+  --font-secondary:'Neue Haas Unica', sans-serif;
+}
+
+html.dark {
+  --color-primary: #ffffff;
+  --color-secondary: #818181;
+  --color-third: #c4c3c2;
+  --color-fourth: #e5e4e2;
+  --color-lines: #333232;
+  --color-punchy: #98a2b9;
+  --color-background: #1c1b1c;
+  --color-background-iphone: #1c1b1c;
+  --color-white: #1c1b1c;
+  --color-black: #ffffff;
+  //
+  --color-background-menu: #333232;
+  --color-menu-link: #ffffff;
+  --color-menu-link-hover: #7c7c7a;
+  --color-menu-link-active: #ffffff;
+}
+
+$font-primary:var(--font-primary);
+$font-secondary:var(--font-secondary);
+
+@import "./main.scss";

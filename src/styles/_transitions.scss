@@ -1,0 +1,26 @@
+@mixin transition-background {
+  transition: background 0.6s ease;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.6s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.cursor {
+  &-enter-active,
+  &-leave-active {
+    transition: opacity 0.2s ease, transform .3s ease;
+  }
+
+  &-enter-from,
+  &-leave-to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,106 @@
+// Import Variables and Base Styles
+@import 'variables';
+@import 'base';
+@import 'transitions';
+
+// Sticky Footer
+// Ensure the footer stays at the bottom of the page when content is short.
+html,
+body {
+  height: 100%; // Set the height to 100% for both html and body
+  @include transition-background;
+
+  &.custom-cursor{
+    cursor: $cursor-image;   
+
+    &-hover{
+      a:not(.has-custom-cursor),button:not(.has-custom-cursor) {
+        cursor: $cursor-image-hover;
+      }
+    }
+  }
+
+  &.hide-cursor * {
+    cursor:none
+  }
+}
+
+// Sticky Footer
+.page {
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Arrange children in a column
+  min-height: 100vh; // Ensure the page takes at least the full viewport height
+
+  background-color: $color-background;
+  .page__content {
+    flex: 1; // Allow content to expand and push the footer to the bottom
+  }
+
+  .page__footer {
+    flex-shrink: 0; // Prevent the footer from shrinking
+  }
+}
+// Navbar Section
+// Styles specific to the navbar section.
+.page__navbar {
+  // position: relative; // Ensure the navbar is positioned relative to its normal position
+  z-index: 998; // Set the stacking order
+  border-bottom: 1px solid $color-lines; // Add a bottom border using the color-lines variable
+  position: sticky;
+  top: 0;
+  background-color: $color-navbar-background;
+
+  //@include transition-background;
+}
+
+// Footer Section
+// Styles specific to the footer section.
+.page__footer {
+  background-color: $color-background;
+  position: relative; // Ensure the footer is positioned relative to its normal position
+  z-index: 1; // Set the stacking order
+}
+
+article .v-popper {
+  display: inline-block;
+}
+// Link tooltip
+.v-popper--theme-tooltip {
+  .v-popper__wrapper{
+    max-width: $max-card-content-width; 
+  
+  }
+  .v-popper__inner {
+    padding: 10px!important;
+    background: var(--color-tooltip-background, var(--color-primary))!important;
+    
+    .title{      
+      @include font-style-4;
+      font-weight: $font-weight-medium; // Medium weight for the title
+
+     
+
+      & + .description{
+        margin-top:5px!important;
+        display: block!important;
+      }
+    }
+
+    .description{
+      @include font-style-3;
+      font-weight: $font-weight-regular; // Regular weight for the description    
+
+      
+
+    }
+
+    img{
+
+      padding-bottom: 10px;;
+    }
+  }
+
+  .v-popper__arrow-outer {
+    border-color: var(--color-tooltip-background, var(--color-primary))!important;
+  }
+}
