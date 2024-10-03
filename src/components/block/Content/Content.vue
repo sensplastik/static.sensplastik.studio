@@ -24,3 +24,16 @@ import BaseTitle from '../../base/Title.vue';
 
     </div>
 </template>
+
+<style scoped lang="scss">
+.content{
+    grid-column: 1/-1;
+    @include grid;
+    &__left{
+        grid-column: 1/span 4;
+    }
+    &__right{
+        grid-column: 7/span 5;
+    }
+}
+</style>
