@@ -3,37 +3,94 @@ import { computed } from 'vue'
 import Article from '../../block/Content/Article.vue'
 import BaseTitle from '../../base/Title.vue';
 
+
+interface Content {
+    image?:any
+    title?:string 
+    article?:any
+    options?:any  
+}
+
 // ---
 
+// Define props for the component
+const props = withDefaults(defineProps<Content>(), {
+});
+
+
+const hasImage = !!props?.image
 </script>
 <template>
     <div class="content">
 
+        <div class="content__image" v-if="hasImage">
+            <div class="picture">
+                <img :src="image?.src" alt="" class="picture__img" />
+            </div>
+        </div>
+
+
         <div class="content__left">
-            <BaseTitle :options="{ title: { level: 2 } }" text="We transport vehicles anywhere." />
+            <BaseTitle :options="{ title: { level: 2 } }" :text="title"
+                class="content__title" />
         </div>
 
         <div class="content__right">
-            <Article
-                title="We transport vehicles anywhere with the highest precision and a seamlessly integrated customer journey"
-                content="<p>With our innovative technology and systems and a team of around 100 specialist trained drivers, all employed by us, we transport vehicles where they need to be, exactly when they need to be there.Today Mobility provides a real - time solution that creates demonstrable control, traceability and efficiency improvements.</p>
-            <p> Delivery is precise and scalable to handle any volume and we seamlessly integrate into your own customer journeys.Our optimised transport solutions minimise additional vehicle movements enabling you to reduce your environmental footprint compared to traditional solutions.Today we have national coverage in both Sweden and Norway, with structured plans for more countries in the near future.</p>"
-                :button="{ label: 'Explore the content' }" />
-
+            <Article v-bind="article"/>
         </div>
 
     </div>
 </template>
 
 <style scoped lang="scss">
-.content{
+.content {
     grid-column: 1/-1;
     @include grid;
-    &__left{
+
+    row-gap: 3rem;
+
+    background-color: $color-block-background;
+
+    &__image {
+
+        grid-column: 1/-1;
+
+        :deep() .picture {
+            border-radius: 1.5rem;
+            overflow: hidden;
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    &__left {
         grid-column: 1/span 4;
     }
-    &__right{
+
+    &__right {
         grid-column: 7/span 5;
+    }
+
+    &__title {
+        display: inline-block;
+
+
+        :deep() {
+            .title__heading {
+                text-align: left;
+                font-weight: $font-weight-medium;
+                font-family: $font-secondary;
+
+                h2,
+                h3 {
+                    @include font-style-6;
+                }
+            }
+        }
     }
 }
 </style>

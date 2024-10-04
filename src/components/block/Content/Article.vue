@@ -36,7 +36,7 @@ interface Props {
 const props = withDefaults(
     defineProps<Props>(),
     {
-        title: 'We are Sensplastik®',
+        title: '',
         content: '',
         options: () => ({
             title: {
@@ -95,6 +95,7 @@ const hasButton = !!props.button
     grid-column: span 5;
 
     @include grid(5);
+    row-gap: 0;
 
     @include media('>mobile', '<laptop') {
         grid-column: span 6;
@@ -107,8 +108,7 @@ const hasButton = !!props.button
 
     &__heading {
         @include font-style-6;
-        font-weight: $font-weight-medium;
-        line-height: 112.5%;
+        font-weight: $font-weight-medium;        
         font-family: $font-secondary;
         grid-column: 1/ span 4;
 

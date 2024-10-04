@@ -31,7 +31,6 @@ const props = withDefaults(defineProps<Props>(), {
       level: 1,
     },
   }),
-  text: 'Building Brands with Lasting Stability',
 })
 
 const headingTag = computed(() => `h${props?.options?.title?.level || 1}`)
@@ -52,9 +51,9 @@ const headingTag = computed(() => `h${props?.options?.title?.level || 1}`)
 .title {
   @include grid;
 
-  &__heading {
-    font-family: $font-primary;
+  &__heading {    
     grid-column: 5 / span 4;
+    font-family: $font-secondary;
     font-weight: $font-weight-medium;
     text-align: center;
 

@@ -3,13 +3,67 @@ import Page from '../layouts/Page.astro';
 import BaseTitle from '../components/base/Title.vue';
 import Section from '../components/LayoutSection.vue';
 import Content from '../components/block/Content/Content.vue';
+import LazyBaseSpacer from '../components/Spacer.vue';
+import contentImage from '../assets/placeholder--content.jpg';
+
+const contentArticle = {
+	title:`We transport vehicles anywhere with the highest precision and a seamlessly integrated customer journey`,
+    content:`<p>With our innovative technology and systems and a team of around 100 specialist trained drivers, all employed by us, we transport vehicles where they need to be, exactly when they need to be there.Today Mobility provides a real - time solution that creates demonstrable control, traceability and efficiency improvements.</p>
+            <p> Delivery is precise and scalable to handle any volume and we seamlessly integrate into your own customer journeys.Our optimised transport solutions minimise additional vehicle movements enabling you to reduce your environmental footprint compared to traditional solutions.Today we have national coverage in both Sweden and Norway, with structured plans for more countries in the near future.</p>`,
+    button:{ label: 'Explore the content' }
+}
 ---
 
 <Page title="Welcome to Sensplastik® Static Home">
 	<main>	
-		<BaseTitle />
+		<LazyBaseSpacer  
+			paddingTop={{ default: '105px' }} 
+			paddingBottom={{ default: 0 }}
+            lineSize={{ default: 0 }} 
+		/>
+
+		<BaseTitle text="Your are the only interface you need"/>
+
+		<LazyBaseSpacer  
+			paddingTop={{ default: '3rem' }} 
+			paddingBottom={{ default:0 }}
+            lineSize={{ default: 0 }} 
+		/>
+
 		<Section hasGrid>
-			<Content />
-		</Section>						
+			<Content 
+			image={contentImage}
+			title="We transport vehicles anywhere."
+			article={contentArticle}
+			/>
+		</Section>	
+		
+		<LazyBaseSpacer  
+			paddingTop={{ default: '11rem' }} 
+			paddingBottom={{ default:0 }}
+            lineSize={{ default: 0 }} 
+		/>
+
+		<Section hasGrid style={{'--custom-block-background':'#EDF9FA'}}>
+			<Content 			
+			title="We transport vehicles anywhere."
+			article={contentArticle}
+			
+			/>
+		</Section>	
+
+		<LazyBaseSpacer  
+			paddingTop={{ default: '4.44rem' }} 
+			paddingBottom={{ default:0 }}
+            lineSize={{ default: 0 }} 
+		/>
+
+		<Section hasGrid>
+			<Content 			
+			title="We transport vehicles anywhere."
+			article={contentArticle}
+			
+			/>
+		</Section>	
 	</main>
 </Page>

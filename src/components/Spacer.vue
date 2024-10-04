@@ -3,17 +3,21 @@ import {computed} from 'vue'
 import {resolveColor} from '/src/utils/resolve'
 
 interface SpacerOptions {
-  paddingTop:any
-  paddingBottom:any 
-  lineSize:any
-  bgColor:any
-
+  paddingTop?:any
+  paddingBottom?:any 
+  lineSize?:any
+  bgColor?:any
+  lineColor?:any
+  stripedLines?:any
 }
 
 // ---
 
 // Define props for the Spacer component
-const props = defineProps<SpacerOptions>()
+const props = withDefaults(defineProps<SpacerOptions>(), {
+  lineColor: undefined,
+  stripedLines: undefined
+});
 
 // Helper function to get the responsive value or default
 function getResponsiveValue(

@@ -21,8 +21,9 @@ const sectionLayout = props?.options?.layout?.default
     :class="[{ 'section--full': isFullWidth, 'section--grid': hasGrid }]"
     role="region"
     aria-label="Content Section"
+    
   >
-    <div class="section__container" >            
+    <div class="section__container">            
       <slot/>
     </div>
   </section>
@@ -41,7 +42,12 @@ const sectionLayout = props?.options?.layout?.default
     margin-left: auto;
     margin-right: auto;
 
+    
+
     @include section-inner-layout;
+
+    background-color:var(--custom-block-background);
+    border-radius:1.5rem;
   }
 
   &--grid {
