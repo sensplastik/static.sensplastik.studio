@@ -7,6 +7,7 @@ const props = defineProps<{
   hasGrid?: boolean
   children?: any
   options?: any
+  style?: any
 }>()
 
 // Extract individual props with default values
@@ -21,7 +22,7 @@ const sectionLayout = props?.options?.layout?.default
     :class="[{ 'section--full': isFullWidth, 'section--grid': hasGrid }]"
     role="region"
     aria-label="Content Section"
-    
+    :style="style"
   >
     <div class="section__container">            
       <slot/>
